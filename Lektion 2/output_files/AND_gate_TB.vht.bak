@@ -1,0 +1,20 @@
+------------------------------------------------------------------------------------------------------
+-- Modulen AND_gate_TB används som testbänk till toppmodulen AND_gate för att simulera dess
+-- funktion via ModelSim.
+
+------------------------------------------------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all; -- använder hela paketet std_logic_1164 för datatypen std_logic.
+
+entity AND_gate_TB
+	port
+	(
+	
+	);
+end entity;
+------------------------------------------------------------------------------------------------------
+-- Arkitekturen testbench används för att implementera 
+architecture testbench of AND_gate_TB is
+begin
+
+end architecture;

@@ -1,0 +1,8 @@
+|Lektion1
+driver => break.IN1
+adas_ok => break.IN0
+camera => break.IN1
+radar => break.IN1
+break << break.DB_MAX_OUTPUT_PORT_TYPE
+
+

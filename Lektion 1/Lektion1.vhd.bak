@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.std_logic_1164.all; // Inkluderar bibliotek std logic.
+
+entity Lektion1 is
+	port
+	(
+		drover, adas_ok, camera, radar	: in std_logic;
+		break										: out std_logic;
+	);
+end entity; 

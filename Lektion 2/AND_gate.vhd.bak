@@ -1,0 +1,6 @@
+-------------------------------------------------------------
+-- Modulen AND_gate används för att realisera en AND-grind.
+-- Kommentarer skrivs med två bindestreck.
+-------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all; -- använder hela paketet std_logic_1164 för datatypen std_logic.

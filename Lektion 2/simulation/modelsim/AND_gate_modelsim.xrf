@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/46704/git/quartus-prime/Lektion 2/AND_gate.vhd
+source_file = 1, C:/Users/46704/git/quartus-prime/Lektion 2/output_files/AND_gate_TB.vht
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/46704/git/quartus-prime/Lektion 2/db/AND_gate.cbx.xml
+design_name = AND_gate
+instance = comp, \X~output\, X~output, AND_gate, 1
+instance = comp, \A~input\, A~input, AND_gate, 1
+instance = comp, \B~input\, B~input, AND_gate, 1
+instance = comp, \X~0\, X~0, AND_gate, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, AND_gate, 1

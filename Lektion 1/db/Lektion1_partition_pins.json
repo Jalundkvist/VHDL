@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "break",
+					"strict" : false
+				},
+				{
+					"name" : "adas_ok",
+					"strict" : false
+				},
+				{
+					"name" : "camera",
+					"strict" : false
+				},
+				{
+					"name" : "radar",
+					"strict" : false
+				},
+				{
+					"name" : "driver",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
