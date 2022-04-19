@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/simulation/modelsim
+Elektion1
+Z1 w1649663711
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1.vhd
+Z5 FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1.vhd
+l0
+L7
+VT9Ra1H91@Dj3b4HWGGjae1
+!s100 6lCa6lDn:zg6eDedT815e1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1649938023
+!i10b 1
+Z8 !s108 1649938023.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1.vhd|
+Z10 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Agate
+R2
+R3
+DEx4 work 8 lektion1 0 22 T9Ra1H91@Dj3b4HWGGjae1
+l18
+L16
+Vo4hOVja6gm=WQM6R0;Od_1
+!s100 RAM<QMJSfLjaFWX;5f3ie1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elektion1_tb
+Z13 w1649938021
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.vht
+Z16 FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.vht
+l0
+L7
+VT9?EWH_gCZiLWl>7=2ga^2
+!s100 UoS0;<kzJ<Dg1TD70dM^^0
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.vht|
+Z18 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.vht|
+!i113 1
+R11
+R12
+Atb
+R14
+R2
+R3
+DEx4 work 11 lektion1_tb 0 22 T9?EWH_gCZiLWl>7=2ga^2
+l26
+L11
+Vf;GCI987i`:Qc3U;?QhVn0
+!s100 ZPiYbbz@IG^hO_8D;g06^0
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12

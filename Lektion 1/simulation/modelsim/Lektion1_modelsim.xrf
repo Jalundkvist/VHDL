@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1.vhd
+source_file = 1, C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.vht
+source_file = 1, C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/Lektion1_tb.backup.vht
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 1/db/Lektion1.cbx.xml
+design_name = Lektion1
+instance = comp, \break~output , break~output, Lektion1, 1
+instance = comp, \adas_ok~input , adas_ok~input, Lektion1, 1
+instance = comp, \camera~input , camera~input, Lektion1, 1
+instance = comp, \driver~input , driver~input, Lektion1, 1
+instance = comp, \radar~input , radar~input, Lektion1, 1
+instance = comp, \break~0 , break~0, Lektion1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Lektion1, 1
