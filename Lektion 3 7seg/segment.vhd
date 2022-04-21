@@ -30,10 +30,11 @@ begin
 			when "1001" => output <= "0011000"; --9
 			when "1010" => output <= "0001000"; --a
 			when "1011" => output <= "0000011"; --b
-			when "1100" => output <= "0000110"; --c
+			when "1100" => output <= "1000110"; --c
 			when "1101" => output <= "0100001"; --d
-			when "1110" => output <= "0000110"; --e
+			when "1110" => output <= "0000110"; --e -
 			when "1111" => output <= "0001110"; --f
+			when others => output <= "1111111"; -- else sats
 		end case;
 	end process;
 end architecture;

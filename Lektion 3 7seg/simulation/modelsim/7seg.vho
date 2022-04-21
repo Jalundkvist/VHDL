@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "04/19/2022 11:54:01"
+-- DATE "04/21/2022 10:41:55"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -36,7 +36,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	segment IS
     PORT (
 	input : IN std_logic_vector(3 DOWNTO 0);
-	output : BUFFER std_logic_vector(6 DOWNTO 0)
+	output : OUT std_logic_vector(6 DOWNTO 0)
 	);
 END segment;
 
@@ -345,12 +345,13 @@ PORT MAP (
 -- Location: MLABCELL_X42_Y1_N6
 \Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Mux0~0_combout\ = ( \input[3]~input_o\ ) # ( !\input[3]~input_o\ & ( (!\input[2]~input_o\ & (\input[1]~input_o\)) # (\input[2]~input_o\ & ((!\input[1]~input_o\) # (!\input[0]~input_o\))) ) )
+-- \Mux0~0_combout\ = ( \input[3]~input_o\ & ( (!\input[2]~input_o\) # ((\input[0]~input_o\) # (\input[1]~input_o\)) ) ) # ( !\input[3]~input_o\ & ( (!\input[2]~input_o\ & (\input[1]~input_o\)) # (\input[2]~input_o\ & ((!\input[1]~input_o\) # 
+-- (!\input[0]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0111011001110110011101100111011011111111111111111111111111111111",
+	lut_mask => "0111011001110110011101100111011010111111101111111011111110111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (

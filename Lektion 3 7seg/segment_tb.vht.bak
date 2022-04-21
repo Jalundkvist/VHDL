@@ -24,4 +24,4 @@ begin
 		port map (input_s, output_s);
 
 		
-end tb;
+end architecture tb;
