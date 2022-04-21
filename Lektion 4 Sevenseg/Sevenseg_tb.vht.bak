@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity segment_tb is
+entity Sevenseg_tb is
 end entity;
 
-architecture tb of segment_tb is
-component segment is
+architecture tb of Sevenseg_tb is
+component Sevenseg is
 	port
 	(
 		input	: in std_logic_vector(3 downto 0);
@@ -20,8 +20,11 @@ signal output_s 	: std_logic_vector(6 downto 0);
 begin
 	-- instantiera uut (unit under test - vår sjusegments-avkodare)
 	-- constructs -> -> compontent design - 
-		uut : segment
+	uut : Sevenseg
 		port map (input_s, output_s);
-
-		
+	stimuli : process
+		input_s <= X"0";
+		wait for 10 ns;
+		input_s <= X"1";
+	end process;
 end tb;

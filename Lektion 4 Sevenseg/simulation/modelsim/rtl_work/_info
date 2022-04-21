@@ -21,9 +21,9 @@ Vhiom_B;4M9Yg4^AFZA<jk3
 !s100 B92g>aXm[;Df9DIiZ>JCX3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1650531348
+Z7 !s110 1650534407
 !i10b 1
-Z8 !s108 1650531348.000000
+Z8 !s108 1650534407.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 4 Sevenseg/Sevenseg.vhd|
 Z10 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 4 Sevenseg/Sevenseg.vhd|
 !i113 1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Esevenseg_tb
-Z13 w1650531230
+Z13 w1650534295
 Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
@@ -76,8 +76,8 @@ R3
 DEx4 work 11 sevenseg_tb 0 22 HQi?^JW_d?@h:c]0X9UTf1
 l20
 L8
-V7]^oYjHBH]c]XCF?QGRz11
-!s100 @?9k8?`T:[`[`YVSE0NPJ3
+VgW4_m]YmEaNmdcH0SX4WK3
+!s100 Mm4FmPA[7:Nem^zLOZ4D11
 R6
 31
 R7
