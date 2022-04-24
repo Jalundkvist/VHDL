@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Logik1/logik1.vhd
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Logik1/logik1_tb.vht
+source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Logik1/db/logik1.cbx.xml
+design_name = logik1
+instance = comp, \led[0]~output\, led[0]~output, logik1, 1
+instance = comp, \led[1]~output\, led[1]~output, logik1, 1
+instance = comp, \switch[0]~input\, switch[0]~input, logik1, 1
+instance = comp, \switch[1]~input\, switch[1]~input, logik1, 1
+instance = comp, \switch[2]~input\, switch[2]~input, logik1, 1
+instance = comp, \Mux0~0\, Mux0~0, logik1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, logik1, 1

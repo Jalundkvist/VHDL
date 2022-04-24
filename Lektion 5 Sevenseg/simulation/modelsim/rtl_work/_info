@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/simulation/modelsim
+Z0 dC:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/simulation/modelsim
 Esevenseg
-Z1 w1650612499
+Z1 w1650821024
 Z2 DPx4 work 12 sevenseg_pkg 0 22 kKQ]`NU44=0Z9:10_7=[`2
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg.vhd
-Z6 FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg.vhd
+Z5 8C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg.vhd
+Z6 FC:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg.vhd
 l0
 L7
 VlY4O[o=Qj0^Jk84AJ5JXZ1
 !s100 0kZ1fHeQ>UemRdIXzmM0X2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1650619402
+Z8 !s110 1650826120
 !i10b 1
-Z9 !s108 1650619402.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg.vhd|
-Z11 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg.vhd|
+Z9 !s108 1650826120.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg.vhd|
+Z11 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -52,10 +52,10 @@ R13
 Psevenseg_pkg
 R3
 R4
-w1650614002
+R1
 R0
-8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_pkg.vhd
-FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_pkg.vhd
+8C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_pkg.vhd
+FC:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_pkg.vhd
 l0
 L4
 VkKQ]`NU44=0Z9:10_7=[`2
@@ -64,21 +64,21 @@ R7
 31
 R8
 !i10b 1
-!s108 1650619401.000000
-!s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_pkg.vhd|
-!s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_pkg.vhd|
+R9
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_pkg.vhd|
+!s107 C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_pkg.vhd|
 !i113 1
 R12
 R13
 Esevenseg_tb
-Z14 w1650619045
+R1
 R2
-Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
 R4
 R0
-Z16 8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_tb.vht
-Z17 FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_tb.vht
+Z15 8C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_tb.vht
+Z16 FC:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_tb.vht
 l0
 L8
 V@NoEW:jhd<fldFiDKDIP51
@@ -88,14 +88,14 @@ R7
 R8
 !i10b 1
 R9
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_tb.vht|
-Z19 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_tb.vht|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_tb.vht|
+Z18 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_tb.vht|
 !i113 1
 R12
 R13
 Atb
 R2
-R15
+R14
 R3
 R4
 DEx4 work 11 sevenseg_tb 0 22 @NoEW:jhd<fldFiDKDIP51
@@ -108,19 +108,19 @@ R7
 R8
 !i10b 1
 R9
+R17
 R18
-R19
 !i113 1
 R12
 R13
 Etop
-Z20 w1650619366
+R1
 R2
 R3
 R4
 R0
-Z21 8C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_top.vhd
-Z22 FC:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_top.vhd
+Z19 8C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_top.vhd
+Z20 FC:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_top.vhd
 l0
 L9
 V?HzXE4>AhDXAPAYS=FH?91
@@ -130,8 +130,8 @@ R7
 R8
 !i10b 1
 R9
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_top.vhd|
-Z24 !s107 C:/Users/46704/git/Digital konstruktion GIT repo/quartus-prime/Lektion 5 Sevenseg/Sevenseg_top.vhd|
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_top.vhd|
+Z22 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Lektion 5 Sevenseg/Sevenseg_top.vhd|
 !i113 1
 R12
 R13
@@ -149,8 +149,8 @@ R7
 R8
 !i10b 1
 R9
-R23
-R24
+R21
+R22
 !i113 1
 R12
 R13
