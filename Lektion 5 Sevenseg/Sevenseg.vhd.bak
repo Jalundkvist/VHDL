@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+library Sevenseg_pkg; -- Ordet work kan ersätta filensnamn.
+use Sevenseg_pkg.sevenseg_pkg.all; -- första sevenseg är filnamnet, andra är paketet.
+
+entity Sevenseg is
+	port
+	(
+	input : in std_logic_vector (3 downto 0);
+	output : out std_logic_vector ( 6 downto 0)
+	);
+end Sevenseg;
+
+
+architecture gate of Sevenseg is
+begin
+	
+	process(input) is
+	begin
+		case input is
+			when "0000" => output <= ZERO; --0
+				-- Sequential Statement(s)
+			when "0001" => output <= ONE; --1
+				-- Sequential Statement(s)
+			when "0010" => output <= TWO; --2
+				-- Sequential Statement(s)
+			when "0011" => output <= THREE; --3
+			when "0100" => output <= FOUR; --4
+			when "0101" => output <= FIVE; --5
+			when "0110" => output <= SIX; --6
+			when "0111" => output <= SEVEN; --7
+			when "1000" => output <= EIGHT; --8
+			when "1001" => output <= NINE; --9
+			when "1010" => output <= A; --a
+			when "1011" => output <= B; --b
+			when "1100" => output <= C; --c
+			when "1101" => output <= D; --d
+			when "1110" => output <= E; --e -
+			when "1111" => output <= F; --f
+			when others => output <= NONE; -- else sats
+		end case;
+	end process;
+end architecture;
