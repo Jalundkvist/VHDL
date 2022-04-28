@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 library work;
-use work.sevenseg_pkg.all;
+use work.pkg.all;
 
 --entity
 entity sevenseg_top is -- top hade kunnat gärna vara döpt till filnamnet.

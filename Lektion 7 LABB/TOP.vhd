@@ -1,9 +1,9 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 library work;
-use work.sevenseg_pkg.all;
+use work.pkg.all;
 
-entity ALU_V17_top is
+entity top is
 	port
 	(
 		switch1, switch0 	 : in std_logic_vector(3 downto 0);
@@ -13,7 +13,7 @@ entity ALU_V17_top is
 	);
 end entity;
 
-architecture behaviour of ALU_V17_top is
+architecture behaviour of top is
 
 signal number0, number1  : std_logic_vector(3 downto 0);
 

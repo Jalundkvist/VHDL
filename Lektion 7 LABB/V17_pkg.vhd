@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-package Sevenseg_pkg is -- start av paket
+package V17_pkg is -- start av paket
 	constant ZERO : std_logic_vector ( 6 downto 0) := "1000000";
 	constant ONE : std_logic_vector ( 6 downto 0) := "1111001";
 	constant TWO : std_logic_vector ( 6 downto 0) := "0100100";

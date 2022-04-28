@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 library work; -- Ordet work kan ersätta filensnamn.
-use work.sevenseg_pkg.all; -- första sevenseg är filnamnet, andra är paketet.
+use work.pkg.all; -- första sevenseg är filnamnet, andra är paketet.
 
 entity Sevenseg is
 	port
