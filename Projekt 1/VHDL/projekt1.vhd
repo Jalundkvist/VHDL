@@ -44,7 +44,8 @@ end entity;
 
 -----------------------------------------------------------------------
 --  architecture beskriver beteendet för in- och utportar.
---  I detta projekt styrs X, Y och Z av logiska begrepp.
+--  I detta projekt styrs X, Y och Z av logiska ekvationer som tagits
+--  fram via karnaugh-diagram från sanningstabellen ovan.
 --
 --  "not" inverterar en signal.
 --  "and" utgör logisk multiplikation.
