@@ -25,73 +25,59 @@ use work.definitions.all;
 
 entity Exercise4 is
    port
-	(
-	   clock   : in std_logic;                    -- 50 MHz klocka.
-		reset_n : in std_logic;                    -- Asynkron inverterande reset-signal.
-		switch  : in std_logic_vector(2 downto 0); -- Slide-switchar för val av blinkfrekvens, ej implementerat än.
-		led     : out std_logic                    -- Lysdiod som blinkas med vald blinkfrekvens.
-	);
+   (
+      clock   : in std_logic;                    -- 50 MHz klocka.
+      reset_n : in std_logic;                    -- Asynkron inverterande reset-signal.
+      switch  : in std_logic_vector(2 downto 0); -- Slide-switchar för val av blinkfrekvens, ej implementerat än.
+     led     : out std_logic                    -- Lysdiod som blinkas med vald blinkfrekvens.
+   );
 end entity;
 
 architecture Behaviour of Exercise4 is
-signal counter_s     : counter_t; -- Räknar antalet snabba klockpulser.
-signal slow_clock_s  : std_logic;   -- Långsam klocka mellan 1 - 8 Hz.
-signal led_enabled_s : std_logic;   -- Indikerar ifall lysdioden är tänd eller inte.
-
-------------------------------------------------------------------------------------------------------------
--- Funktionen counter_elapsed används för att räkna upp antalet snabba klockpulser och därefter undersöka 
--- ifall tillräckligt antal klockpulser har räknats upp för aktuell frekvens, vilket är 50 000 000 vid
--- en klockfrekvens på 50 MHz. Ifall tillräckligt antal snabba klockpulser har räknats upp så returneras
--- true för att indikera detta, annars returneras false.
-------------------------------------------------------------------------------------------------------------
-impure function counter_elapsed return std_logic is
+signal slow_clock_s : std_logic;   -- Långsam klocka mellan 1 - 8 Hz.
+signal led_s        : led_t;       -- Record-signal för lysdioden
+signal frequency_s  : frequency_t; -- Aktuell frekvens som ett osignerat heltal vi skall räkna upp till.
 begin
-		counter_s <= counter_s + 1;
-	if (counter_s >= COUNTER_MAX) then
-	   counter_s <= 0;
-		return '1';
-	else
-	   return '0';
-	end if;
-end function;
+   SlowClock1 : SlowClock port map
+   (
+-- SlowClock |=>|Modulen, 
+   clock         => clock,
+   reset_n       => reset_n,
+   frequency   => frequency_s,
+   slow_clock  => slow_clock_s
+   
+   );
+   
+   led           <= led_s.output;
+   led_s.enabled <= switch(2);
 
-begin 
-
-   ------------------------------------------------------------------------------------------------------------
-   -- Vid reset nollställs den långsamma klockan samt räknaren. Annars räknas antalet snabba klockpulser upp.
-   -- När tillräckligt antal klockpulser har räknats upp för aktuell frekvens, så ettställs den långsamma
-   -- klockan, samtidigt som räknaren nollställs inför nästa uppräkning. När detta sker så tickar den
-   -- långsamma klockan. Övrig tid hålls den långsamma klockan låg. Tilldelning av den långsamma klockan
-	-- åstadkommes via anrop av funktionen counter_elapsed, som returnerar true när den långsamma klockan
-	-- skall slå, annars false.
-  ------------------------------------------------------------------------------------------------------------
-   SLOW_CLOCK_PROCESS: process (clock, reset_n) is
-	begin
-	   if reset_n = '0' then
-		   slow_clock_s <= '0';
-			counter_s <= 0;
-		elsif rising_edge(clock) then
-			slow_clock_s <= counter_elapsed; 
-		end if;
-	end process;
-	
-	------------------------------------------------------------------------------------------------------------
-   -- Vid reset sätts signalen led_enabled_s till false för att släcka lysdioden. Annars vid stigande flank 
-	-- på den snabba klockan, så togglas led_enabled_s via anrop av proceduren toggle_boolean. Eftersom
-	-- utsignal led kontinuerligt tilldelas innehållet från signalen led_enabled_s, tyopomvandlat från 
-	-- boolean till std_logic, så togglas därmed också lysdioden.
-  ------------------------------------------------------------------------------------------------------------
-	LED_ENABLED_PROCESS: process (clock, reset_n) is
-	begin
-	   if reset_n = '0' then
-		   led_enabled_s <= '0';
-		elsif rising_edge(clock) then
-		   if slow_clock_s = '1' then
-			   led_enabled_s <= not led_enabled_s;
+   process (clock, reset_n)
+   begin
+      if reset_n = '0' then
+         frequency_s  <= FREQUENCY_1HZ;
+      elsif rising_edge(clock) then
+         case (switch(1 downto 0)) is
+            when "00"   => frequency_s <= FREQUENCY_1HZ;
+            when "01"   => frequency_s <= FREQUENCY_2HZ;
+            when "10"   => frequency_s <= FREQUENCY_4HZ;
+            when "11"   => frequency_s <= FREQUENCY_8HZ;
+            when others => frequency_s <= FREQUENCY_1HZ;
+         end case;
+      end if;
+   end process;
+   
+   process (clock, reset_n) is
+   begin
+      if reset_n = '0' then
+         led_s.output <= '0';
+      elsif (rising_edge(clock)) then
+		   if led_s.enabled = '1' then
+            if slow_clock_s = '1' then
+               led_s.output <= not led_s.output;
+				end if;
+			else
+            led_s.output <= '0';
 			end if;
-		end if;
-	end process;
-	
-	led <= led_enabled_s;
-	
+      end if;
+   end process;   
 end architecture;

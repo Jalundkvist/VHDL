@@ -60,10 +60,10 @@ end component;
 component SlowClock is
    port
 	(
-   clk        : in  std_logic;   -- 50 Mhz systemklocka
-	rst_n      : in  std_logic;   -- Asynkron reset signal
-	frequency  : in  frequency_t; -- Current frequency through defined datatype, see package definitions.
-	slow_clock : out std_logic    -- Slowclock as outsignal
+      clock        : in  std_logic;   -- 50 Mhz systemklocka
+	   reset_n      : in  std_logic;   -- Asynkron reset signal
+	   frequency    : in  frequency_t; -- Current frequency through defined datatype, see package definitions.
+	   slow_clock   : out std_logic    -- Slowclock as outsignal
    );
 end component;
 
