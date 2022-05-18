@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dC:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/simulation/modelsim
 Eprojekt1
-Z1 w1651226079
+Z1 w1651436302
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
 Z4 8C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1.vhd
 Z5 FC:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1.vhd
 l0
-L24
-V`A5c>RjVL^;inZP5bm@:`0
-!s100 3V0hE2cS]fXVIlYg@NfkV2
+L37
+V34M<JYGS9<H=6KT5^@YB<2
+!s100 ;0lc:FlTCUR6H:EPh8?MO3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1651226936
+Z7 !s110 1651604722
 !i10b 1
-Z8 !s108 1651226936.000000
+Z8 !s108 1651604722.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1.vhd|
 Z10 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1 CvgOpt 0
 Abehaviour
 R2
 R3
-DEx4 work 8 projekt1 0 22 `A5c>RjVL^;inZP5bm@:`0
-l33
-L32
-VKHk7XXfTzQ6a6eKIj=Thj0
-!s100 eRWW6;K5=X[GU>GPe1nKC1
+DEx4 work 8 projekt1 0 22 34M<JYGS9<H=6KT5^@YB<2
+l56
+L55
+VRzVzEDeen:eN=l_D1J`VL0
+!s100 Fc_:8c8kNjS13C9jCT>>C2
 R6
 31
 R7
@@ -48,41 +48,43 @@ R10
 R11
 R12
 Eprojekt1_tb
-Z13 w1651226915
+Z13 w1651604720
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
 R0
-Z14 8C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht
-Z15 FC:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht
+Z15 8C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht
+Z16 FC:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht
 l0
-L4
-VP?FNhUHf>UV65z_IR?5zz3
-!s100 V7@Gbh7mV=4?ZjBlF:Vgz2
+L38
+VXnMHzRf_>HYoJ1OD8]OHP2
+!s100 1igfDNNeY`MWe>DGbR[Az3
 R6
 31
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht|
-Z17 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht|
+Z18 !s107 C:/Users/Dizj/Documents/GIT/VHDL/Projekt 1/VHDL/projekt1_tb.vht|
 !i113 1
 R11
 R12
 Abehaviour
+R14
 R2
 R3
-DEx4 work 11 projekt1_tb 0 22 P?FNhUHf>UV65z_IR?5zz3
-l21
-L7
-V@3oQlAVZg46g1h]i[EP5Q3
-!s100 APgRGbV0IbG]l_?=26F`43
+DEx4 work 11 projekt1_tb 0 22 XnMHzRf_>HYoJ1OD8]OHP2
+l77
+L41
+V0b8DT4^2I@nhPG4IQM61[3
+!s100 08e6X25RKCH=GS]G2n9i80
 R6
 31
 R7
 !i10b 1
 R8
-R16
 R17
+R18
 !i113 1
 R11
 R12
