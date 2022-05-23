@@ -12,7 +12,7 @@ entity car_state is
         start         : in std_logic;
         foot_break    : in std_logic;
         transm_parked : in std_logic;
-          crank         : out std_logic;
+        crank         : out std_logic;
         the_state     : out car_state_t
     );
 end entity;
@@ -22,7 +22,7 @@ architecture rtl of car_state is
 signal the_state_s : car_state_t;
 
 begin
-    process (clk, rst) is
+    process (clk, rst, start, the_state_s) is
      begin
         if rst = '1' then
             the_state_s <= parked;
@@ -49,11 +49,11 @@ begin
         end if;
 
           -- Kör startmotor om start-knapp är tryckt och state = is_driving.
-          if ((start = '1') and (the_state_s = is_driving)) then
-             crank <= '1';
-          else
-              crank <= '0';
-          end if;
+          if (start='1' and the_state_s = is_driving) then
+			crank <= '1';
+		else
+			crank <= '0';
+		end if;
 
     end process;
 
