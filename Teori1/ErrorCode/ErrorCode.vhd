@@ -17,7 +17,7 @@ entity ErrorCode is
 end entity;
 
 architecture Behaviour of ErrorCode is
-signal led_s : std_logic;        -- lagt till std_logic signal
+signal led_s        : std_logic;        -- lagt till std_logic signal
 signal odd_switches : std_logic; -- Ändrat långt namn och gjort om variabel till signal, bool till std_logic.
 begin
 ------------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ begin
 -- lagt till ordet "then" efter jämförelsen.
 -- lagt till tilldelning av värde "<= och '' "
 --
--- Använder mig av led_signal istället för 
+-- Använder mig av led_signal för att kunna tilldela output utanför processen
 ------------------------------------------------------------------------------------------
 process (odd_switches, key_n) is
 begin
@@ -43,6 +43,6 @@ begin
 end process;
 
    odd_switches <= switch(3) xor switch(2) xor switch(1) xor switch(0);
-   led <= led_s;     -- tilldelning från signal till output.
+   led          <= led_s;     -- tilldelning från signal till output.
 
 end architecture;

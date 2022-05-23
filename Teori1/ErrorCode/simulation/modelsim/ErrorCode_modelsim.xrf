@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori Kombinatorik och talsystem/ErrorCode/ErrorCode.vhd
-source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori Kombinatorik och talsystem/ErrorCode/ErrorCode_tb.vht
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori1/ErrorCode/ErrorCode.vhd
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori1/ErrorCode/ErrorCode_tb.vht
 source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, l:/programmering/quartus_prime/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori Kombinatorik och talsystem/ErrorCode/db/ErrorCode.cbx.xml
+source_file = 1, C:/Users/Dizj/Documents/GIT/VHDL/Teori1/ErrorCode/db/ErrorCode.cbx.xml
 design_name = ErrorCode
 instance = comp, \led~output\, led~output, ErrorCode, 1
 instance = comp, \key_n~input\, key_n~input, ErrorCode, 1

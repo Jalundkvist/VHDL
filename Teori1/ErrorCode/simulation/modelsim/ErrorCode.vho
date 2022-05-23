@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "05/18/2022 11:40:03"
+-- DATE "05/20/2022 14:29:39"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -37,7 +37,7 @@ ENTITY 	ErrorCode IS
     PORT (
 	switch : IN std_logic_vector(3 DOWNTO 0);
 	key_n : IN std_logic;
-	led : BUFFER std_logic
+	led : OUT std_logic
 	);
 END ErrorCode;
 
