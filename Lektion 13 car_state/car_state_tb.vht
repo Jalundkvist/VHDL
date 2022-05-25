@@ -55,6 +55,7 @@ uut : car_state port map
 		   wait;
 		end if;
 	end process;
+
 -- process för att snabbt aktivera reset.
    state_machine : process
 	begin
